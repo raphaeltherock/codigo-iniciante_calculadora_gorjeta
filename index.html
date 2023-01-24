@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjetas</title>
+</head>
+<body>
+    <div>
+        <h1>Calculadora de gorjetas</h1>
+    </div>
+    <div>
+        <form>
+            <label for="bill">
+                <p> Valor total da conta:</p>
+                <label>
+                   <p>
+                    R$ <input type="number" placeholder="100" name="bill" id="bill">
+                   </p> 
+                                           
+                </label>
+                <label for="servicequality"> 
+                    <p>Como foi seu atendimento?</p>
+                </label>
+                <p>
+                    <select name="servicequality" id="servicequality">
+                        <option disabled selected>Escolha uma das opções abaixo</option>
+                        <option value="0.3">30% - serviço excelente</option>
+                        <option value="0.2">20% - serviço na média</option>
+                        <option value="0.1">10% - serviço normal</option> 
+                        <option value="0.0>">Sem gorjetas - Péssimo serviço</option>
+                    </select>
+                </p>
+                <label for="people">
+                    <p>Quantas pessoas vão dividir a conta?</p>
+                </label>
+                <p>
+                    <input type="number" placeholder="1" name="people" id="people"> pessoa(s)
+                </p>
+                <button type="submit"> Calcular total a pagar </button>
+        </form>
+    </div>
+</body>
+</html>
